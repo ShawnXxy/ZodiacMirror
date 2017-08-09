@@ -1,5 +1,12 @@
 package com.shawnxxy.domain.repository;
 
-public class ZodiacInfoRepository {
+import javax.transaction.Transactional;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.shawnxxy.domain.entity.ZodiacInfoEntity;
+
+@Transactional
+public interface ZodiacInfoRepository extends CrudRepository<ZodiacInfoEntity, String> {
 
 }
